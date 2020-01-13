@@ -1,7 +1,9 @@
 import puppeteer from 'puppeteer'
 
 export const createDraft = async () => {
-  const browser = await puppeteer.launch()
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox'],
+  })
   const page = await browser.newPage()
   await page.goto('https://hackmd.io/login')
   await page.type('input[name="email"]', process.env.MAIL_ADRESS as string)
