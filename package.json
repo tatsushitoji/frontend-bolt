@@ -29,6 +29,9 @@
     "ts-node": "^8.6.1",
     "typescript": "^3.7.4"
   },
+  "engines": {
+    "node": "12.x"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
