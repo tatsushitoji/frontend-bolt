@@ -26,6 +26,7 @@
     "husky": "^4.0.7",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
+    "sync-glitch-cli": "^2.0.1",
     "ts-node": "^8.6.1",
     "typescript": "^3.7.4"
   },
