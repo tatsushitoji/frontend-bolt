@@ -1,4 +1,8 @@
-import { App } from '@slack/bolt'
+import { App, ExpressReceiver } from '@slack/bolt'
+
+export const expressReceiver = new ExpressReceiver({
+  signingSecret: process.env.SLACK_SIGNING_SECRET || '',
+})
 
 export const app = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET,
@@ -7,4 +11,5 @@ export const app = new App({
     events: '/slack/events',
     commands: '/slack/commands',
   },
+  receiver: expressReceiver,
 })
