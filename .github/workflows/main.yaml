@@ -1,13 +1,14 @@
+# FIXME more correct name
 name: Main
 
 on:
   pull_request:
-    branches:
+    branches-ignore:
       - master
     paths-ignore:
       - '**.md'
   push:
-    branches:
+    branches-ignore:
       - master
     paths-ignore:
       - '**.md'
