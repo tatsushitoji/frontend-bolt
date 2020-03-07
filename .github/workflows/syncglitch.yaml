@@ -2,9 +2,7 @@ name: Sync Glitch
 
 on:
   pull_request:
-    branches:
-      - master
-  push:
+    types: closed
     branches:
       - master
 
