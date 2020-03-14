@@ -1,5 +1,4 @@
 import { app } from '../../app'
-
 import { createDraft } from './createDraft'
 
 export const createMtgDraft = () => {
