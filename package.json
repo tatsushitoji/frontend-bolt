@@ -28,7 +28,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-simple-import-sort": "^5.0.2",
     "husky": "^4.0.7",
-    "lint-staged": "^9.5.0",
+    "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
     "sync-glitch-cli": "^2.0.1",
     "ts-node": "^8.6.1",
@@ -44,12 +44,10 @@
   },
   "lint-staged": {
     "*.ts": [
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ],
     "package.json": [
-      "npx prettier-package-json --write",
-      "git add"
+      "npx prettier-package-json --write"
     ]
   }
 }
